@@ -10,8 +10,8 @@
 
 .axes .rotate {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 90%;
+  left: 95%;
   width: 0;
   height: 0;
 }

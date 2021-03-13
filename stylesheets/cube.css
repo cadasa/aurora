@@ -12,7 +12,7 @@
 }
 
 .side {
-  background-image: url('../images/environment.jpg');
+  background-image: url('../images/cambridge.png');
   background-repeat: no-repeat;
   background-size: 400% 300%;
   position: absolute;
@@ -25,7 +25,7 @@
 }
 
 .cube.grid .side {
-  background-image: url('../images/grid.jpg'), url('../images/environment.jpg');
+  background-image: url('../images/grid.jpg'), url('../images/cambridge.png');
   background-blend-mode: lighten;
 }
 
