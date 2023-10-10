@@ -5,13 +5,23 @@
   <link rel="stylesheet" href="stylesheets/cube.css" />
   <link rel="stylesheet" href="stylesheets/axes.css" />
   <link rel="stylesheet" href="stylesheets/controls.css" />
+  <link rel="stylesheet" href="stylesheets/sidebar.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Cambridge University 360˚ View</title>
+  <title>Lofoten Northern Light 360˚ View</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 
 <body>
   <div class="perspective drag-area">
+    <div id="left" class="sidebar flex-center left collapsed">
+      <div class="sidebar-content rounded-rect flex-center">
+        <div class="sidebar-toggle rounded-rect left" onclick="toggleSidebar('left')">
+          &rarr;
+        </div>
+      </div>
+      <div id='listings' class='listings'></div>
+    </div>
     <div class="camera">
       <div class="rotate">
         <div class="cube">
@@ -49,7 +59,9 @@
       <input class="input-zoom" type="range" min="-800" max="800" value="800">
     </div>
   </div>
+
   <script src="scripts/controls.js"></script>
   <script src="scripts/rotate.js"></script>
+  <script src="scripts/sidebar.js"></script>
 </body>
 </html>
